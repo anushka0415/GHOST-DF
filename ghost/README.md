@@ -26,20 +26,6 @@ Deep fake synthesis methods have been improved a lot in quality in recent years.
 * GHOST exists to experiment and discover AI techniques, for social or political commentary, for movies, and for any number of ethical and reasonable uses.
 
 
-
-## Image Swap Results 
-![](/examples/images/example1.png)
-
-![](/examples/images/example2.png)
-
-## Video Swap Results
-<div>
-<img src="/examples/videos/orig.webp" width="360"/>
-<img src="/examples/videos/elon.webp" width="360"/>
-<img src="/examples/videos/khabenskii.webp" width="360"/>
-<img src="/examples/videos/mark.webp" width="360"/>
-<div/>
-
 ## Installation
   
 1. Clone this repository
