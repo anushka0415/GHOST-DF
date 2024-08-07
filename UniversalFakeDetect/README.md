@@ -73,7 +73,7 @@ Note that if no arguments are provided for `real_path` and `fake_path`, the scri
 
 ## Training
 
-- Our main model is trained on the same dataset used by the authors of [this work](https://arxiv.org/abs/1912.11035). Download the official training dataset provided [here](https://drive.google.com/file/d/1iVNBV0glknyTYGA9bCxT_d0CVTOgGcKh/view) (dataset size ~ 72GB). 
+- The main model is trained on the same dataset used by the authors of [this work](https://arxiv.org/abs/1912.11035). Download the official training dataset provided [here](https://drive.google.com/file/d/1iVNBV0glknyTYGA9bCxT_d0CVTOgGcKh/view) (dataset size ~ 72GB). 
 
 - Download and unzip the dataset in `datasets/train` directory. The overall structure should look like the following:
 ```
@@ -93,13 +93,8 @@ python train.py --name=clip_vitl14 --wang2020_data_path=datasets/ --data_mode=wa
 ```
 - **Important**: do not forget to use the `--fix_backbone` argument during training, which makes sure that the only the linear layer's parameters will be trained.
 
-## Acknowledgement
-
-We would like to thank [Sheng-Yu Wang](https://github.com/PeterWang512) for releasing the real/fake images from different generative models. Our training pipeline is also inspired by his [open-source code](https://github.com/PeterWang512/CNNDetection). We would also like to thank [CompVis](https://github.com/CompVis) for releasing the pre-trained [LDMs](https://github.com/CompVis/latent-diffusion) and [LAION](https://laion.ai/) for open-sourcing [LAION-400M dataset](https://laion.ai/blog/laion-400-open-dataset/).
 
 ## Citation
-
-If you find our work helpful in your research, please cite it using the following:
 ```bibtex
 @inproceedings{ojha2023fakedetect,
       title={Towards Universal Fake Image Detectors that Generalize Across Generative Models}, 
