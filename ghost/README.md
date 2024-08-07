@@ -2,7 +2,7 @@
 
 # 👻 GHOST: Generative High-fidelity One Shot Transfer 
 
-Our paper ["GHOST—A New Face Swap Approach for Image and Video Domains"](https://ieeexplore.ieee.org/abstract/document/9851423) has been published on IEEE Xplore.
+["GHOST—A New Face Swap Approach for Image and Video Domains"](https://ieeexplore.ieee.org/abstract/document/9851423) has been published on IEEE Xplore.
 
 <p align="left">
   Google Colab Demo
@@ -19,13 +19,12 @@ Deepfake stands for a face swapping algorithm where the source and target can be
 
 Deep fake synthesis methods have been improved a lot in quality in recent years. The research solutions were wrapped in easy-to-use API, software and different plugins for people with a little technical knowledge. As a result, almost anyone is able to make a deepfake image or video by just doing a short list of simple operations. At the same time, a lot of people with malicious intent are able to use this technology in order to produce harmful content. High distribution of such a content over the web leads to caution, disfavor and other negative feedback to deepfake synthesis or face swap research.
 
-As a group of researchers, we are not trying to denigrate celebrities and statesmen or to demean anyone. We are computer vision researchers, we are engineers, we are activists, we are hobbyists, we are human beings. To this end, we feel that it's time to come out with a standard statement of what this technology is and isn't as far as us researchers are concerned.
+
 * GHOST is not for creating inappropriate content.
 * GHOST is not for changing faces without consent or with the intent of hiding its use.
 * GHOST is not for any illicit, unethical, or questionable purposes.
 * GHOST exists to experiment and discover AI techniques, for social or political commentary, for movies, and for any number of ethical and reasonable uses.
 
-We are very troubled by the fact that GHOST can be used for unethical and disreputable things. However, we support the development of tools and techniques that can be used ethically as well as provide education and experience in AI for anyone who wants to learn it hands-on. Now and further, we take a **zero-tolerance approach** and **total disregard** to anyone using this software for any unethical purposes and will actively discourage any such uses.
 
 
 ## Image Swap Results 
@@ -81,7 +80,7 @@ We are very troubled by the fact that GHOST can be used for unethical and disrep
   
 ## Training
   
-We also provide the training code for face swap model as follows:
+They also provide the training code for face swap model as follows:
   1. Download [VGGFace2 Dataset](https://www.robots.ox.ac.uk/~vgg/data/vgg_face/).
   2. Crop and align faces with out detection model.
   ```bash
@@ -91,7 +90,7 @@ We also provide the training code for face swap model as follows:
   ```bash
   python train.py --run_name {YOUR_RUN_NAME}
   ```
-We provide a lot of different options for the training. More info about each option you can find in `train.py` file. If you would like to use wandb logging of the experiments, you should login to wandb first  `--wandb login`.
+They provide a lot of different options for the training. More info about each option you can find in `train.py` file. If you would like to use wandb logging of the experiments, you should login to wandb first  `--wandb login`.
   
 ### Tips
   1. For the first epochs we suggest not to use eye detection loss and scheduler if you train from scratch.
@@ -100,7 +99,6 @@ We provide a lot of different options for the training. More info about each opt
   4. During the finetuning stage you can use our pretrain weights for generator and discriminator that are located in `weights` folder. We provide the weights for models with U-Net backbone and 1-3 blocks in AAD ResBlk. The main model architecture contains 2 blocks in AAD ResBlk.
   
 ## Cite
-If you use our model in your research, we would appreciate using the following citation
 
   ### BibTeX Citation
   ```
